@@ -1,14 +1,9 @@
 "use client"
+
 import { useState, useEffect } from "react"
+import Link from "next/link"
 
 export default function Home() {
-
-  const [formData, setFormData] = useState({
-    parentName: "",
-    studentName: "",
-    email: "",
-    phone: "",
-  })
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -35,27 +30,6 @@ export default function Home() {
     return () => clearInterval(timer)
   }, [])
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-
-    await fetch("/api/lead", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData)
-    })
-
-    window.location.href = "/thank-you"
-  }
-
   return (
     <main className="min-h-screen bg-gradient-to-b from-black via-gray-950 to-black flex items-center justify-center p-6 pt-24 relative overflow-hidden">
 
@@ -75,11 +49,12 @@ export default function Home() {
 
           <h1 className="text-5xl font-bold mb-6 text-yellow-400 leading-tight">
             A-Level Maths Finishing School
-for Year 13 Students Preparing for 2026 Exams
+            <br />
+            for Year 13 Students Preparing for 2026 Exams
           </h1>
 
           <p className="text-yellow-300 mb-6 text-lg">
-            Register your interest for our Programme with Elite Coach Dom.  Your child will close knowledge gaps and walk into their
+            Register your interest for our Programme with Elite Coach Dom. Your child will close knowledge gaps and walk into their
             A-Level exams with confidence.
           </p>
 
@@ -117,6 +92,7 @@ for Year 13 Students Preparing for 2026 Exams
 
             <img
               src="/dom.jpg"
+              alt="Dom Roberts"
               className="w-28 h-28 rounded-full border-2 border-yellow-400 shadow-xl object-cover"
             />
 
@@ -158,8 +134,7 @@ for Year 13 Students Preparing for 2026 Exams
 
         </div>
 
-
-        {/* RIGHT SIDE FORM */}
+        {/* RIGHT SIDE */}
         <div className="bg-black/80 backdrop-blur border border-yellow-400 p-8 rounded-xl shadow-2xl">
 
           <div className="text-center mb-4">
@@ -196,70 +171,31 @@ for Year 13 Students Preparing for 2026 Exams
 
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-
-            <input
-              name="parentName"
-              placeholder="Parent Name"
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-gray-900 border border-yellow-400 text-yellow-200 placeholder-yellow-500"
-              required
-            />
-
-            <input
-              name="studentName"
-              placeholder="Student Name"
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-gray-900 border border-yellow-400 text-yellow-200 placeholder-yellow-500"
-              required
-            />
-
-            <input
-              name="email"
-              placeholder="Email Address"
-              type="email"
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-gray-900 border border-yellow-400 text-yellow-200 placeholder-yellow-500"
-              required
-            />
-
-            <input
-              name="phone"
-              placeholder="Phone Number"
-              onChange={handleChange}
-              className="w-full p-3 rounded bg-gray-900 border border-yellow-400 text-yellow-200 placeholder-yellow-500"
-            />
-
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-yellow-400 to-yellow-300 text-black p-3 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
+          {/* STUDY GUIDE CTA */}
+          <div className="mt-6">
+            <Link
+              href="https://hexagon-maths.kit.com/1905c1ebdd"
+              className="block w-full text-center bg-gradient-to-r from-yellow-400 to-yellow-300 text-black p-3 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
             >
-              Register Interest
-            </button>
-
-          </form>
+              Get The Free A-Level Maths Study Guide
+            </Link>
+          </div>
 
           {/* HOW FINISHING SCHOOL WORKS */}
+          <div className="mt-8 bg-gray-900 border border-yellow-400 rounded p-6 text-yellow-300">
 
-<div className="mt-8 bg-gray-900 border border-yellow-400 rounded p-6 text-yellow-300">
+            <h2 className="text-xl font-bold text-yellow-400 mb-4">
+              How the Finishing School Works
+            </h2>
 
-  <h2 className="text-xl font-bold text-yellow-400 mb-4">
-    How the Finishing School Works
-  </h2>
+            <ul className="space-y-3">
+              <li>✓ Step 1 — Diagnose Current Topic Gaps</li>
+              <li>✓ Step 2 — Build on Strengths to Maximise EVERY mark</li>
+              <li>✓ Step 3 — Target weak areas with Focused Teaching</li>
+              <li>✓ Add On = Intensive Exam practice with the Examiners Cheat Codes to build confidence</li>
+            </ul>
 
-  <ul className="space-y-3">
-
-    <li>✓ Step 1 — Diagnose Current Topic Gaps</li>
-
-    <li>✓ Step 2 — Build on Strengths to Maximise EVERY mark</li>
-
-    <li>✓ Step 3 — Target weak areas with Focused Teaching</li>
-
-    <li>✓ Add On = Intensive Exam practice with the Examiners Cheat Codes to build confidence</li>
-
-  </ul>
-
-</div>
+          </div>
 
         </div>
 
@@ -268,4 +204,3 @@ for Year 13 Students Preparing for 2026 Exams
     </main>
   )
 }
-
