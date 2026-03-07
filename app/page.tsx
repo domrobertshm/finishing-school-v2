@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Link from "next/link"
 
 export default function Home() {
 
@@ -50,12 +49,11 @@ export default function Home() {
           <h1 className="text-5xl font-bold mb-6 text-yellow-400 leading-tight">
             A-Level Maths Finishing School
             <br />
-            for Year 13 Students Preparing for 2026 Exams
+            Helping Year 13 Students Close Knowledge Gaps Before the 2026 Exams
           </h1>
 
           <p className="text-yellow-300 mb-6 text-lg">
-            Register your interest for our Programme with Elite Coach Dom. Your child will close knowledge gaps and walk into their
-            A-Level exams with confidence.
+            Download the free study guide and discover how Year 13 students can close knowledge gaps before the 2026 exams.
           </p>
 
           {/* AUTHORITY */}
@@ -169,6 +167,28 @@ export default function Home() {
 
     </div>
 
+    </div> {/* END COUNTDOWN */}
+
+  {/* STUDY GUIDE CTA */}
+<div className="mt-6">
+
+  <p className="text-center text-yellow-300 text-sm mb-3">
+    Free 12-page PDF • Instant download
+  </p>
+
+  <a
+    href="https://hexagon-maths.kit.com/1905c1ebdd"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block w-full text-center bg-gradient-to-r from-yellow-400 to-yellow-300 text-black p-3 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
+  >
+    Download the Free A-Level Maths Study Guide
+  </a>
+
+  <p className="text-center text-yellow-400 text-xs mt-2">
+    Used by ambitious Year 13 students aiming for A/A*
+  </p>
+
   </div>
 
   {/* WHAT'S IN THE GUIDE */}
@@ -211,26 +231,6 @@ export default function Home() {
       <li>✓ Build confidence in the hardest exam questions</li>
       <li>✓ Help students walk into the exam calm and prepared</li>
     </ul>
-
-  </div>
-
-  {/* STUDY GUIDE CTA */}
-  <div className="mt-6">
-
-    <p className="text-center text-yellow-300 text-sm mb-3">
-      Free 12-page PDF • Instant download
-    </p>
-
-    <Link
-      href="https://hexagon-maths.kit.com/1905c1ebdd"
-      className="block w-full text-center bg-gradient-to-r from-yellow-400 to-yellow-300 text-black p-3 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
-    >
-      Download the Free A-Level Maths Study Guide
-      </Link>
-      
-      <p className="text-center text-yellow-400 text-xs mt-2">
-Used by ambitious Year 13 students aiming for A/A*
-</p>
 
   </div>
 
