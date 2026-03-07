@@ -177,7 +177,7 @@ export default function Home() {
               href="https://hexagon-maths.kit.com/1905c1ebdd"
               className="block w-full text-center bg-gradient-to-r from-yellow-400 to-yellow-300 text-black p-3 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
             >
-              Get The Free A-Level Maths Study Guide
+              Click Here to Start Your Journey with our Free A-Level Maths Study Guide
             </Link>
           </div>
 
