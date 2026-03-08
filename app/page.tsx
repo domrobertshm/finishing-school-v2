@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Script from "next/script"
 
 export default function Home() {
 
@@ -29,9 +30,15 @@ export default function Home() {
     return () => clearInterval(timer)
   }, [])
 
-  return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-gray-950 to-black flex items-center justify-center p-6 pt-24 relative overflow-hidden">
+    return (
+  <main className="min-h-screen bg-gradient-to-b from-black via-gray-950 to-black flex items-center justify-center p-6 pt-24 relative overflow-hidden">
 
+    <Script
+      async
+      data-uid="1905c1ebdd"
+      src="https://hexagon-maths.kit.com/1905c1ebdd/index.js"
+      strategy="afterInteractive"
+    />
       {/* BACKGROUND GLOW */}
       <div className="absolute w-[600px] h-[600px] bg-yellow-400/10 blur-[160px] rounded-full top-20 left-20"></div>
 
@@ -53,24 +60,22 @@ export default function Home() {
   <h1 className="text-4xl font-bold mb-6 text-yellow-400 leading-tight">
     A-Level Maths Finishing School
     <br />
-    Helping Year 13 Students Close Knowledge Gaps Before the 2026 Exams
+    Find Out Which A-Level Maths Topics Are Costing You The Most Marks
   </h1>
 
   <p className="text-yellow-300 mb-6 text-lg">
-    Download the free study guide and discover how Year 13 students can close knowledge gaps before the 2026 exams.
+    Click to download the free strategy guide and discover how Year 13 students can close knowledge gaps before the 2026 exams.
   </p>
 
           {/* TOP CTA */}
           <div className="mt-6">
 
-            <a
-  href="https://hexagon-maths.kit.com/1905c1ebdd"
-  target="_blank"
-  rel="noopener noreferrer"
+            <button
+  data-formkit-toggle="1905c1ebdd"
   className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-7 py-4 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
 >
   Download the Free A-Level Maths Study Guide
-</a>
+</button>
 
             <p className="text-yellow-400 text-xs mt-2">
               Free 12-page PDF • Instant download
@@ -91,7 +96,7 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-6 text-center text-yellow-300 mb-8">
 
             <div>
-              <p className="text-3xl font-bold text-yellow-400">15+</p>
+              <p className="text-3xl font-bold text-yellow-400">20+</p>
               <p className="text-sm">Years Teaching</p>
             </div>
 
