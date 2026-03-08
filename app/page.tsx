@@ -239,6 +239,65 @@ export default function Home() {
 
           </div>
 
+          {/* WHAT'S IN THE GUIDE */}
+          <div className="bg-gray-900 border border-yellow-400 rounded p-6 mb-6 text-yellow-300">
+
+            <h3 className="text-xl font-bold text-yellow-400 mb-4">
+              What You'll Learn in the Free Study Guide
+            </h3>
+
+            <ul className="space-y-3">
+              <li>✓ The 6 A-Level Maths topics where students lose the most marks</li>
+              <li>✓ The exact revision structure top students use before exams</li>
+              <li>✓ The most common mistakes examiners see every year</li>
+              <li>✓ How to turn weak topics into reliable exam marks</li>
+              <li>✓ A simple weekly revision system for the final months</li>
+            </ul>
+
+          </div>
+
+          {/* PARENT SECTION */}
+          <div className="bg-gray-900 border border-yellow-400 rounded p-6 mb-6 text-yellow-300">
+
+            <h3 className="text-xl font-bold text-yellow-400 mb-4">
+              For Parents of Year 13 Students
+            </h3>
+
+            <p className="mb-4">
+              Many capable students lose marks in A-Level Maths simply because of small
+              knowledge gaps or exam technique mistakes.
+            </p>
+
+            <p className="mb-4">
+              This finishing school programme focuses on identifying those gaps quickly
+              and strengthening the exact topics that will make the biggest difference
+              before the exams.
+            </p>
+
+            <ul className="space-y-2">
+              <li>✓ Diagnose weak topics quickly</li>
+              <li>✓ Build confidence in the hardest exam questions</li>
+              <li>✓ Help students walk into the exam calm and prepared</li>
+            </ul>
+
+          </div>
+
+          {/* HOW FINISHING SCHOOL WORKS */}
+          <div className="mt-8 bg-gray-900 border border-yellow-400 rounded p-6 text-yellow-300">
+
+            <h2 className="text-xl font-bold text-yellow-400 mb-4">
+              How the Finishing School Works
+            </h2>
+
+            <ul className="space-y-3">
+              <li>✓ Step 1 — Diagnose Current Topic Gaps</li>
+              <li>✓ Step 2 — Build on Strengths to Maximise EVERY mark</li>
+              <li>✓ Step 3 — Target weak areas with Focused Teaching</li>
+              <li>✓ Add On = Intensive Exam practice with the Examiners Cheat Codes to build confidence</li>
+            </ul>
+
+          </div>
+
         </div>
 
       </div>
