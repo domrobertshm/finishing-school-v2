@@ -64,13 +64,13 @@ export default function Home() {
           <div className="mt-6">
 
             <a
-              href="https://hexagon-maths.kit.com/1905c1ebdd"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-7 py-4 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
-            >
-              Download the Free A-Level Maths Study Guide
-            </a>
+  href="https://hexagon-maths.kit.com/1905c1ebdd"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-7 py-4 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
+>
+  Download the Free A-Level Maths Study Guide
+</a>
 
             <p className="text-yellow-400 text-xs mt-2">
               Free 12-page PDF • Instant download
@@ -151,13 +151,13 @@ export default function Home() {
               </p>
 
               <a
-                href="https://calendly.com/domroberts83/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-7 py-4 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
-              >
-                Book My Free 15-Minute Maths Strategy Call
-              </a>
+  href="https://calendly.com/domroberts83/30min"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-7 py-4 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
+>
+  Book My Free 15-Minute Maths Strategy Call
+</a>
 
               <p className="text-yellow-400 text-sm mt-4">
                 Only {placesLeft} Finishing School places available
