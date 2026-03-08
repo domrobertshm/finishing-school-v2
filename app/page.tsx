@@ -70,7 +70,7 @@ export default function Home() {
           <div className="mt-6">
 
             <button
-  data-formkit-toggle="1905c1ebdd"
+  onClick={() => window.open("https://hexagon-maths.kit.com/1905c1ebdd", "_blank")}
   className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-7 py-4 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
 >
   Download the Free A-Level Maths Study Guide
@@ -229,9 +229,9 @@ export default function Home() {
             </p>
 
             <button
-  data-formkit-toggle="1905c1ebdd"
-  className="block w-full text-center bg-gradient-to-r from-yellow-400 to-yellow-300 text-black py-4 px-7 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
->
+  onClick={() => window.open("https://hexagon-maths.kit.com/1905c1ebdd", "_blank")}
+  className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-7 py-4 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
+  >
   Download the Free A-Level Maths Study Guide
 </button>
 
