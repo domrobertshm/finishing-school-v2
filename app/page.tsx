@@ -41,6 +41,27 @@ export default function Home() {
       {/* BACKGROUND GLOW */}
       <div className="absolute w-[600px] h-[600px] bg-yellow-400/10 blur-[160px] rounded-full top-20 left-20"></div>
 
+{/* MICRO HEADER */}
+
+<div className="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-3 text-sm text-yellow-300 bg-black/60 backdrop-blur-md border-b border-yellow-400/20">
+
+  <div className="font-semibold text-yellow-400">
+    <a
+      href="https://www.hexagonmaths.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-yellow-300 transition-colors"
+    >
+      Hexagon Maths
+    </a>
+  </div>
+
+  <div className="hidden md:block">
+    A-Level Maths Specialist • 20+ Years Teaching
+  </div>
+
+</div>
+
       {/* TOP BANNER */}
       <div className="absolute top-0 left-0 w-full bg-yellow-400 text-black text-center p-2 font-semibold">
         Limited Finishing School places available for the 2026 A-Level exams
@@ -197,7 +218,7 @@ export default function Home() {
           <div className="text-center mb-6 text-yellow-300">
 
             <p className="text-sm mb-2">
-              Finishing School registration closes in
+  Next Finishing School intake planning closes in
             </p>
 
             <div className="flex justify-center gap-4 text-yellow-400 font-bold text-xl">
@@ -216,7 +237,10 @@ export default function Home() {
                 {timeLeft.minutes}
                 <div className="text-xs text-yellow-300">mins</div>
               </div>
-
+              
+<p className="text-xs text-yellow-400 mt-2">
+  We review student places weekly to ensure every student receives targeted support.
+</p>
             </div>
 
           </div>
