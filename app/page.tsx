@@ -300,6 +300,28 @@ export default function Home() {
 
           </div>
 
+{/* HEXAGON MATHS BANNER */}
+<div className="mt-10 bg-gradient-to-r from-yellow-400/10 to-yellow-400/5 border border-yellow-400 rounded-xl p-6 text-center shadow-lg">
+
+  <h3 className="text-lg font-bold text-yellow-400 mb-2">
+    Free A-Level Maths Coaching & Resources
+  </h3>
+
+  <p className="text-yellow-300 text-sm mb-4">
+    Visit Hexagon Maths where you can access free coaching, resources, and insights designed to help students succeed in A-Level Maths.
+  </p>
+
+  <a
+    href="https://www.hexagonmaths.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-6 py-3 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-md"
+  >
+    Explore Hexagon Maths
+  </a>
+
+</div>
+
         </div>
 
       </div>
