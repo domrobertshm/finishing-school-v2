@@ -43,7 +43,7 @@ export default function Home() {
 
 {/* MICRO HEADER */}
 
-<div className="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-3 text-sm text-yellow-300 bg-black/60 backdrop-blur-md border-b border-yellow-400/20">
+<div className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-3 text-sm text-yellow-300 bg-black/60 backdrop-blur-md border-b border-yellow-400/20">
 
   <div className="font-semibold text-yellow-400">
     <a
@@ -237,7 +237,7 @@ export default function Home() {
                 {timeLeft.minutes}
                 <div className="text-xs text-yellow-300">mins</div>
               </div>
-              
+
 <p className="text-xs text-yellow-400 mt-2">
   We review student places weekly to ensure every student receives targeted support.
 </p>
