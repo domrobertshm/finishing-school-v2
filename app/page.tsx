@@ -13,7 +13,7 @@ export default function Home() {
   const [placesLeft] = useState(12)
 
   useEffect(() => {
-    const target = new Date("May 15, 2026 00:00:00").getTime()
+    const target = new Date().getTime() + (7 * 24 * 60 * 60 * 1000)
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
@@ -44,21 +44,21 @@ export default function Home() {
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-start">
 
         {/* LEFT SIDE */}
-        <div>
+<div className="text-center bg-black/40 backdrop-blur-sm border border-yellow-400/20 rounded-2xl p-8 shadow-2xl">
 
-          <p className="text-yellow-400 text-sm mb-3 font-semibold">
-            For Year 13 students taking A-Level Maths in 2026
-          </p>
+  <p className="text-yellow-300 mb-6 text-lg">
+    For Year 13 students taking A-Level Maths in 2026
+  </p>
 
-          <h1 className="text-5xl font-bold mb-6 text-yellow-400 leading-tight">
-            A-Level Maths Finishing School
-            <br />
-            Helping Year 13 Students Close Knowledge Gaps Before the 2026 Exams
-          </h1>
+  <h1 className="text-4xl font-bold mb-6 text-yellow-400 leading-tight">
+    A-Level Maths Finishing School
+    <br />
+    Helping Year 13 Students Close Knowledge Gaps Before the 2026 Exams
+  </h1>
 
-          <p className="text-yellow-300 mb-6 text-lg">
-            Download the free study guide and discover how Year 13 students can close knowledge gaps before the 2026 exams.
-          </p>
+  <p className="text-yellow-300 mb-6 text-lg">
+    Download the free study guide and discover how Year 13 students can close knowledge gaps before the 2026 exams.
+  </p>
 
           {/* TOP CTA */}
           <div className="mt-6">
