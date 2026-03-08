@@ -55,6 +55,22 @@ export default function Home() {
           <p className="text-yellow-300 mb-6 text-lg">
             Download the free study guide and discover how Year 13 students can close knowledge gaps before the 2026 exams.
           </p>
+          <div className="mt-6">
+
+  <a
+    href="https://hexagon-maths.kit.com/1905c1ebdd"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-6 py-3 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
+  >
+    Download the Free A-Level Maths Study Guide
+  </a>
+
+  <p className="text-yellow-400 text-xs mt-2">
+    Free 12-page PDF • Instant download
+  </p>
+
+</div>
 
           {/* AUTHORITY */}
           <div className="bg-gray-900 border border-yellow-400 rounded p-4 mb-6 text-yellow-300">
