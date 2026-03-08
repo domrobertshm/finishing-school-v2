@@ -34,11 +34,10 @@ export default function Home() {
   <main className="min-h-screen bg-gradient-to-b from-black via-gray-950 to-black flex items-center justify-center p-6 pt-24 relative overflow-hidden">
 
     <Script
-      async
-      data-uid="1905c1ebdd"
-      src="https://hexagon-maths.kit.com/1905c1ebdd/index.js"
-      strategy="afterInteractive"
-    />
+  src="https://f.convertkit.com/ckjs/ck.5.js"
+  strategy="afterInteractive"
+/>
+
       {/* BACKGROUND GLOW */}
       <div className="absolute w-[600px] h-[600px] bg-yellow-400/10 blur-[160px] rounded-full top-20 left-20"></div>
 
@@ -229,14 +228,12 @@ export default function Home() {
               Free 12-page PDF • Instant download
             </p>
 
-            <a
-              href="https://hexagon-maths.kit.com/1905c1ebdd"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full text-center bg-gradient-to-r from-yellow-400 to-yellow-300 text-black p-3 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
-            >
-              Download the Free A-Level Maths Study Guide
-            </a>
+            <button
+  data-formkit-toggle="1905c1ebdd"
+  className="block w-full text-center bg-gradient-to-r from-yellow-400 to-yellow-300 text-black py-4 px-7 rounded-lg font-bold hover:scale-105 transition-all duration-200 shadow-lg"
+>
+  Download the Free A-Level Maths Study Guide
+</button>
 
             <p className="text-center text-yellow-400 text-xs mt-2">
               Used by ambitious Year 13 students aiming for A/A*
