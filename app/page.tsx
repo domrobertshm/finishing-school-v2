@@ -63,7 +63,7 @@ export default function Home() {
 </div>
 
       {/* TOP BANNER */}
-      <div className="absolute top-0 left-0 w-full bg-yellow-400 text-black text-center p-2 font-semibold">
+      <div className="absolute top-12 left-0 w-full bg-yellow-400 text-black text-center p-2 font-semibold">
         Limited Finishing School places available for the 2026 A-Level exams
       </div>
 
